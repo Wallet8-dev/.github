@@ -10,10 +10,12 @@ vertical (bank8's "Bank8 Wallet", a hotel's guest wallet, a health plan's member
 card) embeds the same hardened SDKs and ships its own branded wallet instead of
 building verifiable-credential protocols from scratch.
 
-**Standards-first is architectural:** the wallet is built FROM the normative
-texts of the OIDF/IETF/ISO specifications - not adapted to a test harness. Every
-SDK protocol function cites its spec section; when a conformance-suite finding
-and a specification disagree, the specification wins. Wallet8 implements
+**Standards-first is architectural:** the wallet is built from the
+normative texts of the OIDF/IETF/ISO specifications, section by
+section. Every SDK protocol function cites its spec section; when a
+conformance-suite finding and a specification disagree, the
+discrepancy is resolved against the specification's text. Wallet8
+implements
 **OpenID for Verifiable Credential Issuance 1.0** (Final, 16 Sep 2025) and
 **OpenID for Verifiable Presentations 1.0** (Final, 9 Jul 2025) section by
 section - Credential Offers by value/reference, both grant flows (Authorization
@@ -117,8 +119,9 @@ Wallet8 depends on these Sentin8 platform services for cross-cutting concerns:
 - **A revoked credential stops presenting** - the Token Status List
   reference decodes, the TTL-cached list fetch validates the `sub`/`ttl`
   ladder, and a non-VALID entry flips the vault row (TSL draft-14).
-- **Spec-first, always** - every SDK function cites its normative section;
-  the specification wins over any test harness finding.
+- **Spec-first, always** - every SDK function cites its normative
+  section; a deviance from the specification is resolved against the
+  specification's own text.
 
 ---
 
