@@ -1,7 +1,8 @@
 # Wallet8 - Digital Identity Wallet
 
-**Secure Post-Quantum-Safe Digital Identity Wallet That Heals and Scales Itself
-- the Wallet Role of the Credential Stack, Built Standards-First.**
+**Open-Source Secure Post-Quantum-Safe Digital Wallet Platform That Heals and Scales Itself.**
+
+**Wallet8 is [OpenID Certified](https://sentin8.dev/certification)** - certified by the OpenID Foundation for OpenID4VCI and OpenID4VP, including the High Assurance Interoperability Profile (HAIP).
 
 Wallet8 is the wallet vertical of the Sentin8 platform - the missing WALLET role
 of the digital-credential stack: the credential vault, the OID4VCI issuance
